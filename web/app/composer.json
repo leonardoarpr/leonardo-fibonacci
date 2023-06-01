@@ -1,0 +1,26 @@
+{
+    "require": {
+        "phpunit/phpunit": "^8.0",
+        "squizlabs/php_codesniffer": "3.*",
+        "slim/slim": "^4.1",
+        "slim/http": "*",
+        "slim/psr7": "*",
+        "robmorgan/phinx": "^0.11",
+        "predis/predis": "^1.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Acme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AppTest\\Acme\\": "test/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

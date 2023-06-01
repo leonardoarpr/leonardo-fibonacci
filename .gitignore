@@ -1,0 +1,13 @@
+# Global
+.*.swp
+.DS_Store
+
+# Application
+web/app/vendor/
+web/app/.phpunit.result.cache
+
+# PHPStorm
+.idea
+
+# SSL Certs
+etc/ssl/
