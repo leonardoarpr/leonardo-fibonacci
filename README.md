@@ -1,6 +1,17 @@
-All credits to https://github.com/nanoninja/docker-nginx-php-mysql (@nanoninja) who did an incredible job.
-I added a bunch of stuff that I think is really useful when creating a new project on php.
-
+## Why the code isn't ideal?
+code:
+```php
+function fibonacci($count){
+    if($count == 0 || $count == 1){
+        return 1;
+    } else {
+        return fibonacci($count - 1) + fibonacci($count - 2);
+    }
+}
+```
+## Because
+Each call to Fibonacci function, the PHP will open other tread and use a piece of memory to save it.
+After resolve and call function twice time in a loop the function will pass other time resolve it each thread
 
 # Nginx PHP
 
