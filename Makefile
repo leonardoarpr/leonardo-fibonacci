@@ -21,4 +21,3 @@ logs:
 
 test:
 	@docker-compose exec -T php ./app/vendor/bin/phpunit --colors=always --configuration ./app/
-	@make resetOwner

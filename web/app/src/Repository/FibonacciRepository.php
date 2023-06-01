@@ -29,5 +29,4 @@ class FibonacciRepository
     {
         return number_format($result, 0, '', '');
     }
-
 }

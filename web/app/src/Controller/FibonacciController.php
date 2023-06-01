@@ -19,5 +19,4 @@ class FibonacciController
 
         return $response;
     }
-
 }

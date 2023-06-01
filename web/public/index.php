@@ -13,6 +13,6 @@ $app->get('/check', function (Request $request, Response $response) {
     return $response;
 });
 
-$app->get('/fibonacci/{number}', FibonacciController::class . ':FibonacciAction');
+$app->get('/fibonacci/{number}', FibonacciController::class . ':FibonacciAction')->setName('fibonacci');
 
 $app->run();

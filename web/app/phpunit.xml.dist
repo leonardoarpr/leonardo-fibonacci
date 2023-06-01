@@ -7,21 +7,19 @@
         </testsuite>
     </testsuites>
 
-    <filter>
-        <whitelist addUncoveredFilesFromWhitelist="false">
+    <coverage processUncoveredFiles="true">
+        <include>
             <directory suffix=".php">./src</directory>
-            <exclude>
-                <directory suffix=".php">./vendor</directory>
-            </exclude>
-        </whitelist>
-    </filter>
-
+        </include>
+        <exclude>
+            <directory suffix=".php">./vendor</directory>
+        </exclude>
+    </coverage>
     <php>
         <ini name="date.timezone" value="UTC"/>
     </php>
-
     <logging>
-        <log type="coverage-html" target="./report/phpunit"/>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+<!--        <log type="coverage-html" target="./report/phpunit"/>-->
+<!--        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>-->
     </logging>
 </phpunit>
